@@ -1,0 +1,33 @@
+<div class="login-container ">
+<div class="col-md-4 col-sm-4"></div>
+<div class="col-md-4 col-sm-4 shadow login content-padded">
+<form role="form" name="loginForm" id="login-form" ng-submit="login(user)" autocomplete="off" class="form-horizontal">
+  <h4>Login</h4>
+  <hr>
+  <div class="form-group">
+    <label for="email" class="col-sm-4 col-md-4 control-label">Email</label>
+    <div class="col-sm-8 col-md-8">
+      <input type="text" class="form-control" id="email" value="" name="email" ng-model="user.email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password" class="col-sm-4 col-md-4 control-label">Password</label>
+    <div class="col-sm-8 col-md-8">
+      <input type="password" class="form-control" id="password" value="" name="password" ng-model="user.password">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <div class="col-sm-12">
+      <input type="submit" id="btn-login" class="btn btn-custom btn-lg button primary" value="Log in">
+    </div>
+  </div>
+  <div ng-if="message == 'Usuario o contrasena incorrectos.'">
+    <div class="alerta-danger">{{message}}</div>
+  </div>
+  
+</form>
+</div>
+<div class="col-md-4 col-sm-4"></div>
+
+</div>

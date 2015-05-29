@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  <link rel="stylesheet" type="text/css" href="css/ratchet.min.css">
+  <link rel="stylesheet" type="text/css" href="css/fw.css">
+  <!--cdn con la version 1.2.4 de angular.js-->
+  <script type='text/javascript' src="./bower_components/angular/angular.js"></script>
+  <script type='text/javascript' src="./bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-jwt/dist/angular-jwt.js"></script>
+  <script type="text/javascript" src="./bower_components/a0-angular-storage/dist/angular-storage.js"></script>
+  
+  <!--archivo app.js, donde hemos definido nuestro modulo app-->
+  <script type='text/javascript' src="js/app.js"></script>
+  <script type='text/javascript' src="js/ratchet.min.js"></script>
+</head>
+    <body>
+       <header class="bar bar-nav">
+              <h1 class="title">App</h1>
+        </header>
+        <div class="content">
+
+            <!--directiva ng-view, aquí cargara todo el contenido-->
+            <div ng-view class="content-padded"></div>
+           
+        </div>
+       
+
+     <nav class="bar bar-tab">
+          <a class="tab-item active" href="#">
+          <span class="icon icon-home"></span>
+          <span class="tab-label">Home</span>
+          </a>
+          <a class="tab-item" href="#">
+          <span class="icon icon-person"></span>
+          <span class="tab-label">Profile</span>
+          </a>
+          <a class="tab-item" href="#">
+          <span class="icon icon-star-filled"></span>
+          <span class="tab-label">Favorites</span>
+          </a>
+          <a class="tab-item" href="#">
+          <span class="icon icon-search"></span>
+          <span class="tab-label">Search</span>
+          </a>
+          <a class="tab-item" href="#">
+          <span class="icon icon-gear"></span>
+          <span class="tab-label">Settings</span>
+          </a>
+        </nav>
+     
+       
+        
+    </body>
+</html>
